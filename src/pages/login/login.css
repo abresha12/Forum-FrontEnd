@@ -1,0 +1,161 @@
+.login {
+    width: 100%;
+    height: 50em;
+    background: url("https://www.evangadi.com/themes/humans/assets/images/misc/bg-svg-f.svg")
+      center no-repeat;
+    background-color: #f8f8f8;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+  
+  .login_container {
+    width: 580px;
+    height: 550px;
+    padding: 3em;
+    box-shadow: 0 0 5px 1px #ebebeb;
+    border-radius: 0.5em;
+    background: white;
+    animation: anim 2s ease-in-out 2s 1 forwards alternate;
+  }
+  
+  .login__top {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  
+  .login__top h3 {
+    color: #4b456f;
+    margin-bottom: 1rem;
+    font-size: 1.3em;
+  }
+  
+  .login__top p {
+    color: #666;
+  }
+  
+  .login_container .login__link {
+    text-decoration: none;
+    color: #fe8402;
+    margin-left: 0.4em;
+  }
+  
+  .login_container .login__link:hover {
+      text-decoration: underline;
+  }
+  
+  .login_container form .forgot__link {
+      text-decoration: none;
+      color: #fe8402;
+      text-align: right;
+      margin-bottom: 1em;
+  }
+  .login_container form {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .login_container input {
+      color: #333333;
+      font-size: 16px;
+      height: 50px;
+      padding: 12px;
+      outline: none;
+      border: 0 none;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+  }
+  
+  .login_container input:focus {
+      border-bottom: 2px solid #fe8402;
+  }
+  
+  .login_container form button {
+      background: #516cf0;
+      font-size: 1.2em;
+      font-weight: normal;
+      border-radius: .5em;
+      padding: .7em 2em;
+      border: none;
+      color: #fff;
+
+  }
+  .login_container form button:hover {
+      cursor: pointer;
+      background: #ff8c11;
+  }
+  
+  .login__about {
+    width: 25vw;
+  }
+  
+  .login__about--title {
+      color: #fe8402;
+  }
+  
+  .login__about .about__detail h1 {
+      color: #4b456f;
+      font-size: 2.4em;
+      font-weight: bold;
+      margin-bottom: 1em;
+  }
+  
+  .login__about .about__detail p {
+      color: #656565;
+      line-height: 1.6;
+      margin-bottom: 1em;
+  }
+  
+  .login__about button {
+      background: #ff8c11;
+      border-radius: .5em;
+      padding: .7em 2em;
+      font-size: 1em;
+      font-weight: normal;
+      border: none;
+      color: #fff;
+  }
+  
+  .login_container .login__bottom--link {
+    text-align: center;
+    margin-top: 1em;
+  }
+  /* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .login{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .login_container {
+    width: 90vw;
+    height: auto;
+    padding: 2em;
+  }
+
+  .login_container form button {
+    font-size: 1em;
+    padding: .7em 2em;
+  }
+  
+  .login__about {
+    width: 100%;
+  }
+
+  .login__about .about__detail h1 {
+    font-size: 1.8em;
+    margin-bottom: 0.8em;
+  }
+
+  .login__about .about__detail p {
+    font-size: 14px;
+    margin-bottom: 0.8em;
+  }
+
+  .login__about button {
+    font-size: 0.9em;
+    padding: .7em 1.5em;
+  }
+}

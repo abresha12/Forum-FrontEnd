@@ -1,0 +1,110 @@
+.answer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    flex-direction: column;
+    padding: 2em;
+}
+
+
+.answer__allContainer {
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    flex-direction: column;
+}
+.answer__container {
+    width: 100%;
+}
+
+.answer__question h1,
+.answer__form h1{
+    color: #4b456f;
+    margin-bottom: .4em;
+}
+
+.answer__question h3{
+    color: #464545;
+    margin: 0 .5em;
+}
+.answer__question p {
+    margin: .4em .5em;
+}
+
+.answer_title h2{
+    color: #464545;
+    margin: 1em 0;
+    padding: .5em 0;
+    border-top : 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.answer__form a{
+    color: #4b456f;
+    margin-bottom: .5em;
+}
+
+.answer__form a:hover{
+    text-decoration: underline;
+}
+
+.answer__description ul li{
+    margin-bottom: .5em;
+}
+
+.answer__form {
+    width: 60vw;
+    padding: 2em 4em;
+    box-shadow:5px 5px 5px 1px #e6e4e4 ;
+    border-radius: 1em;
+    text-align: center;
+    border: 2px solid #eee;
+    overflow: auto;
+}
+
+.answer__form form {
+    padding: 1em 0;
+}
+
+.answer__form form textarea {
+    width: 100%;
+}
+
+.answer__form form textarea {
+    color: #333333;
+    font-size: 16px;
+    padding: 12px;
+    outline: none;
+    border: 0 none;
+    border: 1px solid #ccc;
+    border-radius: .5em;
+    margin-bottom: .5em;
+}
+
+.answer__form button{
+    background: #516cf0;
+}
+.answer__form button:hover{
+    cursor: pointer;
+    background: #fe8402;
+}
+@media (max-width: 768px) {
+    .answer__allContainer {
+      width: 90vw;
+      padding: 1em;
+    }
+    
+    .answer__form {
+      width: 80vw;
+      padding: 1em 2em;
+    }
+  
+    .answer__form textarea {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
