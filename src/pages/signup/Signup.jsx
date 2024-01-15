@@ -15,7 +15,7 @@ function Signup() {
      e.preventDefault()
     try {
        
-     const regiUser = await axios.post('http://localhost:4000/api/users', {
+     const regiUser = await axios.post(`${import.meta.env.VITE_REACT_APP_base_url}/api/users`, {
       firstName: form.firstName,
       lastName: form.lastName,
       userName: form.userName||`${form.fName}.${form.lName}`,

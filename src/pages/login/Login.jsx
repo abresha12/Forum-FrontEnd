@@ -15,7 +15,7 @@ function Login() {
   const handelSubmit = async (e) => {
     e.preventDefault()
     try { 
-      const loginUser = await axios.post('http://localhost:4000/api/users/login', {
+      const loginUser = await axios.post(`${import.meta.env.VITE_REACT_APP_base_url}/api/users/login`, {
         email: form.email,
         password:form.password
       })

@@ -23,7 +23,7 @@ function App() {
       token=''
     }
     else {
-      let userRes = await axios.get('http://localhost:4000/api/users', { headers: { 'x-auth-token': token } })
+      let userRes = await axios.get(`${import.meta.env.VITE_REACT_APP_base_url}/api/users`, { headers: { 'x-auth-token': token } })
       setuserData({
         token,
         user: {

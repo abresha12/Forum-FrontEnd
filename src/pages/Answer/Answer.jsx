@@ -17,7 +17,7 @@ function Answer() {
   // console.log(question_id)
   useEffect(() => {
     async function fetchData() {
-      const request = await axios.post ("http://localhost:4000/api/question/id", {
+      const request = await axios.post (`${import.meta.env.VITE_REACT_APP_base_url}/api/question/id`, {
         question_id: question_id,
       });
   // console.log(question_id)
@@ -36,7 +36,7 @@ function Answer() {
     e.preventDefault();
     try {
       //sending user data to database to be logged in
-      const questionAddRes = await axios.post("http://localhost:4000/api/answer", {
+      const questionAddRes = await axios.post(`${import.meta.env.VITE_REACT_APP_base_url}/api/answer`, {
         answer: form.answer,
         answer_code_block: "...",
         user_id: userData.user.id,
@@ -52,9 +52,9 @@ function Answer() {
 
   useEffect(() => {
     async function fetchData() {
-      const request = await axios.post("http://localhost:4000/api/answer/question_id", {
+      const request = await axios.post(`${import.meta.env.VITE_REACT_APP_base_url}/api/answer/question_id`, {
         question_id: question_id,
-      });
+    });
       // console.log(request)
       setAllAnswers(request.data.data);
       return request;

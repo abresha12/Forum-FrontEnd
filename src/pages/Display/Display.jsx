@@ -9,7 +9,7 @@ function Display({data, question_id, user_id,answer_view}) {
   const navigate = useNavigate();
   useEffect(() => {
     async function fetchData() {
-      const request = await axios.get(`http://localhost:4000/api/users/${user_id}`);
+      const request = await axios.get(`${import.meta.env.VITE_REACT_APP_base_url}/api/users/${user_id}`);
       // console.log(user_id)
       // console.log(request);
       setName(request.data.data.user_name);
